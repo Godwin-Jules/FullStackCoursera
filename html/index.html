@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/log.png" alt="Website's logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Blog</h1>
+        <article>
+            <h2>20% off this weekend</h2>
+            <p>Come down to Little Lemon and your meal will be 20% off!</p>
+        </article>
+        <article>
+            <h2>Our new menu</h2>
+            <p>We've updated our menu with new dinners </p>
+        </article>
+        <input type="button" value="Click me" onclick="msg()"/>
+        <h2>Using checkbox</h2>
+        <input type="checkbox" name="dg" id="dog" value="Dog">
+        <label for="dog">I like dogs</label>
+        <input type="checkbox" name="dg" id="dogl" value="Dog">
+        <label for="dogl">I dislike dogs</label>
+        <input type="checkbox" name="ct" id="cat" value="Cat">
+        <label for="cat">I like cats</label>
+        <input type="checkbox"name="ct" id="catl" value="Cat">
+        <label for="catl">I dislike cats</label>
+        <h2>Using radio</h2>
+        <input type="radio" name="light" id="theme" value="Light">
+        <label for="light">Light</label>
+        <input type="radio" name="theme" id="dark" value="Dark">
+        <label for="dark">Dark</label>
+        <h2>Using form</h2>
+        <form action="https://google.com" method="POST">
+            <input type="submit" value="Submit">
+        </form>
+        <h2>Using text</h2>
+        <label for="fname">First name :</label>
+        <input type="text" name="name" id="fname" pattern="[A-Z][a-z]">
+        <h2>Using password</h2>
+        <label for="pwd">Password :</label>
+        <input type="password" name="password" id="pwd">
+        <h2>Using date</h2>
+        <label for="dob">Date of Birth :</label>
+        <input type="date" name="date of birth" id="dob">
+        <h2>Using datetime-local</h2>
+        <label for="birthdaytime">Date of Birth (date and time) :</label>
+        <input type="datetime-local" name="birthday" id="birthdaytime">
+        <h2>Using email</h2>
+        <label for="mail">Your email address</label>
+        <input type="email" name="email input" id="mail" >
+        <h2>Using file</h2>
+        <label for="myfile">Select a file :</label>
+        <input type="file" name="select file" id="myfile" accept=".jpg,.png" multiple>
+        <h2>Using hidden</h2>
+        <input type="hidden" name="hide item" id="custId" value="3487">
+        <h2>Using image</h2>
+        <input type="image" src="processor.jpg" name="quantity" min="1" max="5" height="40">
+        <h2>Using number</h2>
+        <input type="number" name="quantity" id="numb" min="1" max="5">
+        <h2>Using range</h2>
+        <label for="volume">volume :</label>
+        <input type="range" name="range input" id="volume" min="0" max="10">
+        <h2>Using reset</h2>
+        <input type="reset">
+        <h2>Using search</h2>
+        <label for="gsearch">Search in Google :</label>
+        <input type="search" name="google searching" id="gsearch">
+        <h2>Using time</h2>
+        <label for="appt">Select a time :</label>
+        <input type="time" name="select time" id="appt">
+        <h2>Using tel</h2>
+        <label for="phone">Enter your phone number :</label>
+        <input type="tel" name="phone" id="phone" pattern="[+]{1}[0-9]{11,14}">
+        <h2>Using url</h2>
+        <label for="homepage">Add your homepage :</label>
+        <input type="url" id="homepage" name="homepage" />
+        <h2>Using week</h2>
+        <label for="week">Select a week :</label>
+        <input type="week" id="week" name="week">
+        <h2>Using month</h2>
+        <label for="bdaymonth"></label>
+        <input type="month" id="bdaymonth" name="month" min="1990-01" value="2000-01">
+
+    </main>
+    <footer>
+        <p>Copyright Litte Lemon</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
