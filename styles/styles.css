@@ -44,26 +44,46 @@ nav a, nav a:visited {
 
 nav a:hover {
     transition-duration: 300ms;
-    padding-top: 0;
     border-bottom: 3px solid black;
-    padding: 3px;
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 main h1 {
     text-align: center;
     padding: 20px;
     font-size: 40px;
+    font-style: italic;
+    color: rgb(56, 56, 56);
 }
 
 main hr {
     color: gray;
     height: 5px;
     position: relative;
-    left: 50vw;
-    width: 90px;
-    background-color: black;
+    left: 45vw;
+    width: 120px;
+    background-color: grey;
 }
 main {
     align-items: center;
+}
+
+footer {
+    display: grid;
+    grid-auto-flow: row nowrap;
+    grid-template-columns: 100px;
+    grid-template-rows: 150px;
+
+}
+
+.footer-content {
+    background-color: rgb(37, 36, 36);
+}
+
+.social-media {
+    background-color: grey;
+}
+
+.social-media a {
+    background-color: black;
 }
