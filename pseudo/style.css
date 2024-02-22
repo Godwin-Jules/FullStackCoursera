@@ -1,0 +1,61 @@
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 35px;
+}
+
+/* li:first-of-type {
+    transform: rotate(-60deg);  
+} */
+/* It can rotate an element 60 degrees in the counter clock (dans le sens des aiguilles d'une montre */
+
+li::first-line {
+    color: lightseagreen;
+    text-decoration: underline;
+    line-height: 1;
+}
+
+li::first-letter {
+    color: coral;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    font-weight: bolder;
+    line-height: 1;
+    transform: rotate(-60deg);
+    rotate: 60deg;
+}
+
+li::selection {
+    color: brown;
+    background: antiquewhite;
+    line-height: 1;
+}
+
+li:active {
+    background: grey;
+    text-transform: underline;
+}
+
+li::marker {
+    color: cornflowerblue;
+    content: '<>';
+    font-size: 1.1em;
+}
+
+#tips::before {
+    color: darkslategray;
+    background: darkkhaki;
+    content: 'Tips';
+    padding: 0 5px 0 3px;   /* Order : top.right.bottom.left OR top.bottom - right.left OR top - right.left - bottom OR top - right - bottom - left */
+    border-radius: 10%;
+}
+
+#tips::after {
+    background: darkkhaki;
+    color: darkslategray;
+    content: '!!';
+    padding-right: 5px;
+    border-radius: 20%;
+}
