@@ -1,0 +1,59 @@
+body {
+    margin: 15px;
+    padding: 20px;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+    background-color: #dfdffc;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #ac80f8;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+h2 {
+    padding: 5px;
+    font-style: italic;
+    text-align: center;
+    color: aqua;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: grey;
+    height: auto;
+}
+
+input {
+    padding: 5px;
+    width: 50vw;
+    height: 35px;
+    border-radius: 5px;
+    border: solid 2px gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+
+p::first-letter {
+    text-transform: capitalize;
+    font-size: 40px;
+    color: green;
+    font-weight: bolder;
+}
+
+p {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Cambria Math', Georgia, sans-serif;
+    height: auto;
+    background-color: #b4b4b6;
+    border-radius: 10px;
+}
+
+p::before {
+    content: 'This is what you typed:';
+    text-decoration: underline;
+    font-weight: lighter;
+}
