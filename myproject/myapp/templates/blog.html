@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment section</title>
+    <link rel="stylesheet" href="style.css"> <!--Ça ne fonctionne pas et je ne sais pas encore pourquoi ! Ce qui est sûr je vais trouver -->
+</head>
+<body>
+    <div>
+        <h1>User Comments</h1>
+        <form method="POST" id="form">
+
+            {{ form.as_p }}
+
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('form');
+
+        form.addEventListener("submit", submitHandler);
+
+        function submitHandler(e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message === 'success') {
+                    alert('success');
+                    form.reset();
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>
